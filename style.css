@@ -1,0 +1,143 @@
+body,h1,h2,h3,p,option{
+    font-family :arial,"微軟正黑體";
+}
+
+body {
+    background-color:rgb(6, 20, 48);
+  }
+h1{
+    color:#ffffff;
+}
+h2{
+    color: #F5DAA2;
+}
+h3{
+    color: #D2D4D7;
+}
+
+
+p{
+    color: #c1cde0;
+    size: 2;
+}
+
+option{
+    color: #455774;
+    size: 2;
+
+}
+
+a:link{
+    color:#BDF5A2;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #7C8392;
+    padding: 20px;
+    text-align: center;
+}
+.header h1{
+    font-size: 50px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #384869;
+  }
+  
+  /* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #D2D4D7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.leftcolumn {   
+    float: left;
+    width: 40%;
+  }
+
+
+/* 方塊 */
+.card {
+    background-color: #0c2453;
+    border-style: outset;
+    border-color: rgb(190, 191, 253);
+    padding: 20px;
+    margin-top: 20px;
+}
+/* 清空 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* 圖片、影片格式 */
+.fakeimg {
+    background-color: rgb(87, 87, 87);
+    width: 100%;
+    padding: 20px;
+  }
+
+.img2 {
+    border-style: solid;
+    border-width:1px;
+    border-color: rgba(255, 255, 255,50);
+}
+
+
+
+.micro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+
+.responsive {
+    padding: 6px;
+    float: left;
+    width: 48.99999%;
+}
+
+.div2 {
+    color: #c1cde0;
+    size: 2;
+    height: 25%;
+    width: 95%;
+}
+
+
+.typing{
+
+    padding-top: 6%;
+    margin-bottom: 5%;
+    font-weight: normal;
+    letter-spacing: .3rem;
+    -webkit-animation: type 2s steps(50, end) forwards;
+    animation: type 2s steps(50, end) forwards;
+    }
+    .typing-item{
+    text-align: center;
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    }
+    @-webkit-keyframes type{
+    from { width: 0;}
+    }
+    @keyframes type{
+    from { width: 0;}
+    }
+
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }

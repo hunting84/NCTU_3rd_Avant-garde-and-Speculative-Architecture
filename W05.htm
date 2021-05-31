@@ -1,0 +1,110 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+</head>
+<body>
+    <div class="header">
+        <h1> Avant-garde and Speculative Architecture </h1>
+        <h2> W05_Hypertext超文本練習(三)_20201021_<span id="timer">10</span></h2>
+        </div>
+        <div class="topnav">
+            <a href="index.php">HOME</a>
+            <a href="W04_1.htm">W04_1</a>
+            <a href="W04_2.htm">W04_2</a>
+            <a href="W05.htm">W05</a>
+            <a href="W06.htm">W06</a>
+            <a href="W07.htm">W07</a>
+            <a href="W15.php">W15</a>
+            <a href="WFinal_pre.htm">Pre-Final</a>
+            <a href="WFinal.htm">Final</a>
+            <a href="https://reurl.cc/Q3Y6z5//" style="float:right">Hunting</a>
+        </div>
+
+
+    <div class="card">
+        <h2 id="titleOne" onmouseover="switchcolor()" onmouseout="resetcolor()" >Hellow My Friend</h1>
+
+        <button onclick ="switchContent()">Please Click</button>
+        <br>
+
+
+        <h3>Check 1_Move window</h2>
+            <button onclick="myWin=window.open('','','width=200,height=100')">New Window</button>
+            <button onclick="myWin.moveBy(-5,0)">Move Left</button>
+            <button onclick="myWin.moveBy(5,0)">Move Right</button>
+            
+        <br>
+        <h3>Check 2_Your pet ?</h2>
+            <select>
+                <option>Dog</option>
+                <option>Cat</option>
+                <option>Hamster</option>
+                <option>Parrot</option>
+                <option>Spider</option>
+                <option>Goldfish</option>
+            </select>
+        <h3>Check 3_Compute</h2>
+            <button onclick="compute_3()">Click</button>
+        <br>
+
+
+        <script>
+        var x = true;
+        var e = document.getElementById("titleOne");
+        function switchContent(){
+            if(x){
+                e.innerHTML = "There are barrier-breaking activities";
+            }else{
+                e.innerHTML = "Hellow My Friend";    
+            }
+            x = !x;
+        }
+        function switchcolor(){
+            document.getElementById("titleOne").style.color = "#ff0000";
+        }
+        function resetcolor(){
+            document.getElementById("titleOne").style.color = "#F5DAA2";
+        }
+        function resetcolor(){
+            document.getElementById("titleOne").style.color = "#F5DAA2";
+        }
+
+        function compute_3(){
+            var n1 = prompt("請輸入數字", "");
+            var op = prompt("請輸入數字：+, -, *, /", "");
+            var n2 = prompt("請輸入數字", "");
+            n1 = Number(n1);
+            n2 = Number(n2);
+            var result;
+            
+            if(op =="+"){
+                result = n1 + n2;
+            }else if(op =="-"){
+                result = n1 - n2;
+            }else if(op =="*"){
+                result= n1 * n2;
+            }else if(op =="/"){
+                result = n1 / n2;
+            }else{
+                result="Wrong";
+            }
+            alert(result);
+        }
+
+        window.onload=init;
+        function init(){
+            timer=document.getElementById("timer");
+            window.setInterval(countdown,1000);
+        }
+        function countdown(){
+            timer.innerHTML=timer.innerHTML-1;
+            if(timer.innerHTML>0){
+            }else{
+                document.location="index.php";
+            }
+        }
+        </script>
+    </div>
+</body>
+</html>
